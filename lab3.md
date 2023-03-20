@@ -1,4 +1,4 @@
-# LAB 3 WALKTHROUGH: DESERIALIZATION VULNERABILITY
+# LAB 3 WALKTHROUGH: DECENTRALIZATION VULNERABILITY
 
 ## Define the target
 There's a flag hidden in this form as `Flag.txt`:
