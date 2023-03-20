@@ -6,6 +6,7 @@ There's a flag hidden in this form as `Flag.txt`:
 TTHL{L0nG_L1v3_Ins3cUr3_dEser1al1zatiOn}
 ```
 In the source code, we found the function that stores this file:
+
 ![1.png](/img/1.png)
 
 What we have to do is to output the flag on the website.
