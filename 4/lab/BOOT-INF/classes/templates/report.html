@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jasper Report</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" th:href="@{assets/css/style.css}" />
+<!--    <link href="../static/assets/css/style.css" rel="stylesheet">-->
+</head>
+
+<body>
+
+<div class="container d-flex justify-content-center">
+
+  <div class="center">
+    <h1>Tạo báo cáo dễ dàng với JasperReport</h1>
+    <form action="/upload-report" method="post" enctype="multipart/form-data">
+      <div class="dropzone">
+        <img src="http://100dayscss.com/codepen/upload.svg" class="upload-icon" id="upload-img" />
+        <input type="file" name="file" class="upload-input" />
+      </div>
+      <button type="submit" class="btn" name="uploadbutton">Tạo report</button>
+    </form>
+      <div class="d-flex justify-content-center">
+        <a class="link-success" href="/template/template.jrxml">Tải file mẫu</a>
+<!--        <a class="link-danger" href="/backup/ReportController.rar">Backup</a>-->
+      </div>
+  </div>
+
+</div>
+<script>
+  document.querySelector('input[type="file"]').addEventListener('change', function() {
+    // Call the changeImage function here
+    changeImage();
+  });
+
+  function changeImage() {
+    // Change the image source to the new image
+    document.getElementById("upload-img").src = "https://100dayscss.com/codepen/checkmark-green.svg";
+  }
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+</body>
+</html>

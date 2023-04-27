@@ -1,0 +1,1 @@
+Để chạy chương trình: "java -jar vulnearable-0.0.1-SNAPSHOT.jar"
